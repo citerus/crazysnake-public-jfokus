@@ -1,5 +1,7 @@
 package se.citerus.crazysnake;
 
+import java.util.Set;
+
 /**
  * Basic implementation of a Brain that stores the participants and the metadata for the
  * heat in protected fields for access by extending classes.
@@ -11,17 +13,17 @@ package se.citerus.crazysnake;
 public abstract class BaseBrain implements Brain {
 
     protected HeatMeta meta;
-    protected String opponent;
+    protected Set<String> participants;
 
     /**
      * Default, empty implementation.
      *
-     * @param opponent Name of opponent in this heat.
+     * @param participants Participants in game.
      */
     @Override
-    public void init(String opponent, HeatMeta meta) {
+    public void init(Set<String> participants, HeatMeta meta) {
         this.meta = meta;
-        this.opponent = opponent;
+        this.participants = participants;
     }
 
     /**
