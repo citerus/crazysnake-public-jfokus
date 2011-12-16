@@ -6,6 +6,11 @@ package se.citerus.crazysnake;
 public interface Square {
 
     /**
+     * Returns true if the square does not contain a wall or a snake-part, otherwise false.
+     */
+    boolean isUnoccupied();
+
+    /**
      * Returns the content of the Square.
      */
     SquareContent getContent();
