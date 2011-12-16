@@ -18,8 +18,6 @@ public class Position implements Serializable {
 
     /**
      * Returns the x coordinate.
-     *
-     * @return the x coordinate.
      */
     public int getX() {
         return x;
@@ -27,8 +25,6 @@ public class Position implements Serializable {
 
     /**
      * Returns the y coordinate.
-     *
-     * @return the y coordinate.
      */
     public int getY() {
         return y;

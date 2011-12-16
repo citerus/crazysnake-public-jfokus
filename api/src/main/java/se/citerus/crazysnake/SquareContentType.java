@@ -1,19 +1,22 @@
 package se.citerus.crazysnake;
 
 /**
- * Describes what can types of content that exist on a Square.
+ * Describes types of content that exist on a Square.
  */
 public enum SquareContentType {
 
-    SNAKE_HEAD(true), SNAKE_TAIL(true), BORDER(true), CHERRY(false), APPLE(false), STRAWBERRY(false);
+    EMPTY(false), SNAKE_HEAD(true), SNAKE_TAIL(true), BORDER(true), CHERRY(false), APPLE(false), STRAWBERRY(false);
 
-    private final boolean collisionIsLethal;
+    private final boolean solid;
 
-    private SquareContentType(boolean hardObject) {
-        this.collisionIsLethal = hardObject;
+    private SquareContentType(boolean solid) {
+        this.solid = solid;
     }
 
-    public boolean isHard() {
-        return collisionIsLethal;
+    /**
+     * Tells whether this SquareContentType will be lethal to collide with for a snake.
+     */
+    public boolean isSolid() {
+        return solid;
     }
 }

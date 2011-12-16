@@ -4,6 +4,7 @@ package se.citerus.crazysnake;
  * Represents a compass direction in the world of snakes.
  */
 public enum Direction {
+
     NORTH, SOUTH, EAST, WEST;
 
     /**
@@ -55,7 +56,7 @@ public enum Direction {
      * NOTE: A Movement can never be used to reverse the movement of a snake. For example,
      * if we are moving NORTH and decide that we want to go SOUTH, there is no Movement that
      * can take us there, since snakes can only turn RIGHT, LEFT or move FORWARD. In these cases,
-     * this method will return FORWARD.
+     * this method will return <tt>null</tt>.
      *
      * @param currentDirection the current Direction
      * @param newDirection the desired direction
@@ -73,8 +74,6 @@ public enum Direction {
                         return Movement.LEFT;
                     case SOUTH:
                         return Movement.RIGHT;
-                    default:
-                        return Movement.FORWARD;
                 }
             case NORTH:
                 switch (newDirection) {
@@ -82,8 +81,6 @@ public enum Direction {
                         return Movement.RIGHT;
                     case WEST:
                         return Movement.LEFT;
-                    default:
-                        return Movement.FORWARD;
                 }
             case WEST:
                 switch (newDirection) {
@@ -91,8 +88,6 @@ public enum Direction {
                         return Movement.RIGHT;
                     case SOUTH:
                         return Movement.LEFT;
-                    default:
-                        return Movement.FORWARD;
                 }
             case SOUTH:
                 switch (newDirection) {
@@ -100,8 +95,6 @@ public enum Direction {
                         return Movement.LEFT;
                     case WEST:
                         return Movement.RIGHT;
-                    default:
-                        return Movement.FORWARD;
                 }
         }
 

@@ -29,8 +29,6 @@ public class GameState implements Serializable {
 
     /**
      * Returns the turn which this GameState represents.
-     *
-     * @return the turn which this GameState represents.
      */
     public long getTurn() {
         return turn;
