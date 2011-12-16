@@ -5,7 +5,7 @@ package se.citerus.crazysnake;
  */
 public enum SquareContentType {
 
-    EMPTY(false), SNAKE_HEAD(true), SNAKE_TAIL(true), BORDER(true), CHERRY(false), APPLE(false), STRAWBERRY(false);
+    EMPTY(false), SNAKE_HEAD(true), SNAKE_TAIL(true), WALL(true), CHERRY(false), APPLE(false), STRAWBERRY(false);
 
     private final boolean solid;
 

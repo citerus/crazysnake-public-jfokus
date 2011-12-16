@@ -21,6 +21,11 @@ public interface Square {
     boolean containsFruit();
 
     /**
+     * Tells whether this Square is occupied by a wall
+     */
+    boolean containsWall();
+
+    /**
       * Returns true if the square does not contain a wall or a snake-part, otherwise false.
       */
      boolean hasSolidContent();
