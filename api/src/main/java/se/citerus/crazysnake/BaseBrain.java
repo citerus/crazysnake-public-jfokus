@@ -36,5 +36,5 @@ public abstract class BaseBrain implements Brain {
         return getClass().getSimpleName();
     }
 
-    public abstract Movement getNextMove(GameState state);
+    public abstract Movement getNextMove(HeatState state);
 }

@@ -7,11 +7,11 @@ import static java.lang.Math.max;
 import static java.lang.Math.min;
 
 /**
- * Represents the current state of the game.
+ * Represents the current state of the heat.
  * <p/>
- * Note that a new GameState is provided to the brains for each turn.
+ * Note that a new HeatState is provided to the brains for each turn.
  */
-public class GameState implements Serializable {
+public class HeatState implements Serializable {
 
     private final Square[][] arena;
     private final Map<String, Snake> snakes;
@@ -19,7 +19,7 @@ public class GameState implements Serializable {
     private final long turnsUntilGrowth;
     private List<Position> fruitPositions;
 
-    public GameState(final Square[][] arena, final Map<String, Snake> snakes, long turn, long turnUntilGrowth) {
+    public HeatState(final Square[][] arena, final Map<String, Snake> snakes, long turn, long turnUntilGrowth) {
         this.arena = arena;
         this.snakes = snakes;
         this.turn = turn;

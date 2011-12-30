@@ -28,7 +28,7 @@ public interface Brain {
      * @param state Game state.
      * @return The snake's desired next move.
      */
-    Movement getNextMove(GameState state);
+    Movement getNextMove(HeatState state);
 
     /**
      * @return Name, for display purposes only.
