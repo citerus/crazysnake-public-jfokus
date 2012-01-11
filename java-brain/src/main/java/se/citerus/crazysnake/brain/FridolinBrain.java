@@ -6,7 +6,7 @@ import se.citerus.crazysnake.Movement;
 /**
  * Left-Rigth-Left etc...
  */
-public class WetterstrandBrain extends PoliticalBrain {
+public class FridolinBrain extends PoliticalBrain {
 
     private int count;
 
