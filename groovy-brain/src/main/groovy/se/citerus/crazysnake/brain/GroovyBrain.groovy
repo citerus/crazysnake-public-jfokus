@@ -5,7 +5,7 @@ import se.citerus.crazysnake.*
 class GroovyBrain extends BaseBrain {
 
     @Override
-    Movement getNextMove(GameState state) {
+    Movement getNextMove(HeatState state) {
         Movement.FORWARD
     }
 
