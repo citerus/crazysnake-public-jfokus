@@ -24,7 +24,7 @@ public class HeatMeta {
      * brain is too slow, the result from getNextMove will be ignored and the snake will move forward.
      *
      * @return Maximum allowed think time in ms.
-     * @see Brain#getNextMove(GameState)
+     * @see Brain#getNextMove(HeatState)
      */
     public long getThinkTimeInMs() {
         return thinkTimeInMs;

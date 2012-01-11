@@ -31,7 +31,7 @@ public interface Brain {
     Movement getNextMove(HeatState state);
 
     /**
-     * @return Name, for display purposes only.
+     * @return Name, for display and identification purposes.
      */
     String getName();
 }
