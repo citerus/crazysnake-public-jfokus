@@ -17,13 +17,13 @@ public abstract class PoliticalBrain extends BaseBrain {
     public abstract Movement getDodgeProblemsAheadDirection();
 
     @Override
-    public Movement getNextMove(GameState state) {
+    public Movement getNextMove(HeatState state) {
         final Movement movement = calculateNextMove(state);
         memory.append(movement.name()).append(" - ");
         return movement;
     }
 
-    private Movement calculateNextMove(GameState state) {
+    private Movement calculateNextMove(HeatState state) {
         try {
             Snake me = state.getSnake(getName());
 
