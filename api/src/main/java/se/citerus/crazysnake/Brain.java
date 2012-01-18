@@ -8,6 +8,7 @@ import java.util.Set;
  * Implementing classes should provide the following:
  * <ol>
  * <li> A static name via getName()</li>
+ * <li> A unique fully qualified package + class name, this is the identity of your brain. If to teams use the same package + class name, there will be a conflict.</li> 
  * <li> Its next movement via getNextMove(), based on the current GameState. getNextMove() must finish within a given
  * time span or the results will be ignored and the snake will continue its next move forward.</li>
  * </ol>
@@ -31,7 +32,9 @@ public interface Brain {
     Movement getNextMove(HeatState state);
 
     /**
-     * @return Name, for display and identification purposes.
+     * @return Name, for display purposes. This name is what will be shown on in the GUI during the game.
+     * You can change this name if you detects someone else is using the same name.
+     * Do not use getClass().getName() here since that would reveal your identity.
      */
     String getName();
 }
