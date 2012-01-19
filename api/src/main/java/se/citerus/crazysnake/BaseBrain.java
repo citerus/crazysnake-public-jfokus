@@ -13,7 +13,7 @@ import java.util.Set;
 public abstract class BaseBrain implements Brain {
 
     protected HeatMeta meta;
-    protected Set<String> participants;
+    protected Set<BrainId> participants;
 
     /**
      * Default, empty implementation.
@@ -21,7 +21,7 @@ public abstract class BaseBrain implements Brain {
      * @param participants Participants in game.
      */
     @Override
-    public void init(Set<String> participants, HeatMeta meta) {
+    public void init(Set<BrainId> participants, HeatMeta meta) {
         this.meta = meta;
         this.participants = participants;
     }

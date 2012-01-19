@@ -23,7 +23,7 @@ public interface Brain {
      * @param participants All participants in this heat.
      * @param meta     Meta data.
      */
-    void init(Set<String> participants, HeatMeta meta);
+    void init(Set<BrainId> participants, HeatMeta meta);
 
     /**
      * @param state Game state.

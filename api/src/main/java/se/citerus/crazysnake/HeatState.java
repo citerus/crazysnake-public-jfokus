@@ -14,12 +14,12 @@ import static java.lang.Math.min;
 public class HeatState implements Serializable {
 
     private final Square[][] arena;
-    private final Map<String, Snake> snakes;
+    private final Map<BrainId, Snake> snakes;
     private final long turn;
     private final long turnsUntilGrowth;
     private List<Position> fruitPositions;
 
-    public HeatState(final Square[][] arena, final Map<String, Snake> snakes, long turn, long turnUntilGrowth) {
+    public HeatState(final Square[][] arena, final Map<BrainId, Snake> snakes, long turn, long turnUntilGrowth) {
         this.arena = arena;
         this.snakes = snakes;
         this.turn = turn;
@@ -52,7 +52,7 @@ public class HeatState implements Serializable {
      * @param id the id for the Snake.
      * @return the Snake with the given id, null if no such Snake exists.
      */
-    public Snake getSnake(String id) {
+    public Snake getSnake(BrainId id) {
         return snakes.get(id);
     }
 

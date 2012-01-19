@@ -31,7 +31,7 @@ public interface Snake {
     /**
     * Returns the brain id of the {@code Snake}.
     */
-   public String getBrainId();
+   public BrainId getId();
 
     /**
      * Returns the current score of the {@code Snake}.
