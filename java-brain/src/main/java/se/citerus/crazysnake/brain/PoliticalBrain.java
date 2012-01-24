@@ -25,9 +25,7 @@ public abstract class PoliticalBrain extends BaseBrain {
 
     private Movement calculateNextMove(HeatState state) {
         try {
-            Snake me = state.getSnake(this.getClass().getName());
-            
-            state.getSnake("");
+            Snake me = state.getSnake(new BrainId(this));
 
             Position headPosition = me.getHeadPosition();
             Direction direction = me.getDirection();
