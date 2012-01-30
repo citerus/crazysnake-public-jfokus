@@ -32,8 +32,8 @@ public interface Brain {
     Movement getNextMove(HeatState state);
 
     /**
-     * @return Name, for display purposes. This name is what will be shown on in the GUI during the game.
-     * You can change this name if you detects someone else is using the same name.
+     * @return Name, for display purposes only. This name is what will be shown on in the GUI during the game.
+     * You can change this name if you detects someone else is using the same name as you or want to reflect an update.
      * Do not use getClass().getName() here since that would reveal your identity.
      */
     String getName();

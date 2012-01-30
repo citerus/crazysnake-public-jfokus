@@ -1,5 +1,9 @@
 package se.citerus.crazysnake;
 
+/**
+ * This class is used to identify a Brain. In particular it may be used to distinguish your own brain from your opponent.
+ *
+ */
 public class BrainId {
 	
 	private final String id;
