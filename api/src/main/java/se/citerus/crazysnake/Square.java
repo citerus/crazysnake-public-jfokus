@@ -31,7 +31,7 @@ public interface Square {
     boolean containsWall();
 
     /**
-      * Returns true if the square does not contain a wall or a snake-part, otherwise false.
+      * Returns true if the square contains a wall or a snake-part, otherwise false.
       */
      boolean hasSolidContent();
 
